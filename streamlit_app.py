@@ -1,6 +1,13 @@
 import streamlit as st
+import pandas as pd 
 
-st.title("🎈 My new app")
+st.title(" Etimad Active Tenders - Informtion Technolgy Industry  ")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    "These are the currently active tenders sorted by similarity score"
 )
+
+df = pd.read_csv("EtimadTendersSimilarity.csv")
+
+# Display the dataframe with sorting and filtering
+st.dataframe(df, use_container_width=True)
+
