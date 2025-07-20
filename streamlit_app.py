@@ -41,5 +41,5 @@ st.title("Etimad Active Tenders - Information Technology Industry")
 st.write("These are the currently active tenders sorted by similarity score")
 
 # Load and display the data
-df = pd.read_csv("EtimadTendersSimilarity.csv")
+df = pd.read_csv("EtimadTendersSimilarity_WithGE_AND_Groq.csv")
 st.dataframe(df, use_container_width=True, height=590)
